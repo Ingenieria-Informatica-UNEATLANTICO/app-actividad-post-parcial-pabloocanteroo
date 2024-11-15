@@ -5,7 +5,7 @@
 | **Descripción**                                      | **Enlace**                                                   |
 |------------------------------------------------------|--------------------------------------------------------------|
 | **Documento del Parcial (PDF)**                      | [Ver documento](./parcial.pdf)                               |
-| **Diagrama de Clases - Primera Iteración**           | [Ver diagramas (README 1ª iteración)](./primer_readme.md)    |
+| **Diagrama de Clases - Primera Iteración**           | [Ver diagramas (README 1ª iteración)]([./primer_readme.md](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-pabloocanteroo/blob/c2975c40b678e6edafbb74a0ee00e5114342aeb6/Entrega/Primera%20Iteraci%C3%B3n/Readme.md))    |
 | **Diagrama de Clases - Segunda Iteración**          | [Ver diagramas (README 2ª iteración)](./segundo_readme.md)   |
 
 ## Detalles
