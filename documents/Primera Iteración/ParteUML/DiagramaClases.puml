@@ -1,0 +1,59 @@
+@startuml
+class Persona {
+}
+
+class Pasajero {
+}
+Persona <|-- Pasajero
+Pasajero --> Vehiculo : se monta en
+Pasajero --> Tarifa : paga
+
+class Conductor {
+}
+Persona <|-- Conductor
+Conductor --> Incidencia : reporta
+
+class Tarifa {
+}
+Tarifa --> "FormaDePago" : con
+
+class "FormaDePago" {
+}
+
+class Abono {
+}
+Abono --> "FormaDePago" : asocia
+
+class Vehiculo {
+}
+Conductor --> Vehiculo : conduce
+Vehiculo --> Incidencia : sufre
+
+class Flota {
+}
+Flota --* Vehiculo : incluye
+Flota --> Servicio : ofrece
+
+class Incidencia {
+}
+
+class Servicio {
+}
+Servicio --> Ruta : ofrece
+Servicio --> Incidencia : usa
+
+class Paradas {
+}
+Ruta --* Paradas : compone
+
+class Ruta {
+}
+Ruta --> Horarios : tiene
+
+class Horarios {
+}
+
+' Relación indirecta entre Incidencia y Persona a través de Conductor
+Incidencia ..> Persona : relación indirecta
+
+@enduml
