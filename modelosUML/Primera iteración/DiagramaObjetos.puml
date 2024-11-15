@@ -1,0 +1,82 @@
+@startuml
+class Persona {
+edad: 18
+dni: 7277
+}
+
+class Pasajero {
+asiento: "a3"
+}
+
+Persona <|-- Pasajero
+Pasajero --> Vehiculo : se monta en
+Pasajero --> Tarifa : paga
+
+
+class Conductor {
+experiencia: 4
+carnet: "a2"
+}
+Persona <|-- Conductor
+Conductor --> Incidencia : reporta
+
+class Tarifa {
+tipo: "adulto"
+}
+Tarifa --> "FormaDePago" : con
+
+class "FormaDePago" {
+forma: "usoAbono"
+}
+
+class Abono {
+tipo: "trimestral"
+}
+Abono --> "FormaDePago" : asocia
+
+class Vehiculo {
+matricula: 737
+color: "azul"
+}
+Conductor --> Vehiculo : conduce
+Vehiculo --> Incidencia : sufre
+
+class Flota {
+empresa: "tus"
+}
+Flota --* Vehiculo : incluye
+Flota --> Servicio : ofrece
+
+class Incidencia {
+id:18
+descripcion: "Fallo motor"
+}
+
+class Servicio {
+id:1
+}
+Servicio --> Ruta : ofrece
+Servicio --> Incidencia : usa
+
+class Paradas {
+id:12
+direccion: "av19"
+}
+Ruta --* Paradas : compone
+
+class Ruta {
+id:737
+inicio: "SA" 
+fin: "TB"
+}
+Ruta --> Horarios : tiene
+
+class Horarios {
+horaInicio: "12:27"
+horaFin: "13:27"
+}
+
+' Relación indirecta entre Incidencia y Persona a través de Conductor
+Incidencia ..> Persona : relación indirecta
+
+@enduml

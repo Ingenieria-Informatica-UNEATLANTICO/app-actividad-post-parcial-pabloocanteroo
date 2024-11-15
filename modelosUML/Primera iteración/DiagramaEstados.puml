@@ -1,0 +1,13 @@
+@startuml 
+[*] --> Creado : Servicio registrado
+
+Creado --> Planificado : Rutas y horarios asignados
+Planificado --> EnCurso : Servicio en operación
+EnCurso --> Suspendido : Incidencia reportada
+Suspendido --> EnCurso : Incidencia resuelta
+EnCurso --> Completado : Ruta finalizada
+
+Completado --> Archivado : Datos almacenados
+Archivado --> [*]
+@enduml
+

@@ -1,0 +1,44 @@
+@startuml
+' Diagrama de Estados Simplificado para el Sistema de Transporte Público
+
+' Ciclo del Pasajero
+
+[*] --> Esperando : En la parada
+
+state Esperando {
+    [*] --> EsperandoEnParada
+    EsperandoEnParada --> MontadoEnVehiculo : Sube al vehículo
+}
+
+state MontadoEnVehiculo {
+    [*] --> PagoPendiente
+    PagoPendiente --> ViajeEnProgreso : Pago realizado
+    ViajeEnProgreso --> Bajando : Llega a destino
+}
+
+state Bajando {
+    [*] --> FinDelViaje
+    FinDelViaje --> [*] : Fin del viaje
+}
+
+' Ciclo del Vehículo
+
+[*] --> EnMantenimiento : En reparación
+
+state EnMantenimiento {
+    [*] --> Mantenimiento
+    Mantenimiento --> Disponible : Reparación completada
+}
+
+state Disponible {
+    [*] --> EnRuta
+    EnRuta --> ParadaTemporal : Parada por incidencia
+    ParadaTemporal --> EnRuta : Retoma el viaje
+    EnRuta --> Finalizado : Fin del recorrido
+}
+
+state Finalizado {
+    [*] --> [*] : Fin del servicio
+}
+
+@enduml

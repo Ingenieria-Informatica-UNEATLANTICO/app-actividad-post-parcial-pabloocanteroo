@@ -1,3 +1,35 @@
+# Sistema de Transporte Público
+
+## Documentos y Enlaces Importantes
+
+| **Descripción**                                      | **Enlace**                                                   |
+|------------------------------------------------------|--------------------------------------------------------------|
+| **Documento del Parcial (PDF)**                      | [Ver documento](./documents/Entrega%20Parcial%20Software.pdf)                              |
+| **Diagrama de Clases - Primera Iteración**           |[ (README 1ª iteración)](./modelosUML/Primera%20iteración/Readme.md)    |
+| **Diagrama de Clases - Segunda Iteración**          | [ (README 2ª iteración)](./modelosUML/Segunda%20iteración/Readme.md)    |
+
+## Detalles
+
+### 1. **Documento del Parcial (PDF)**
+Este es el documento oficial del parcial, donde se explica el contexto del proyecto y los requisitos principales.
+
+### 2. **Diagrama de Clases - Primera Iteración**
+Este enlace te llevará a un **README** que contiene los **diagramas de clases** generados en la primera iteración del proyecto, donde se definieron las relaciones y clases principales del sistema de transporte público.
+
+### 3. **Modelos y Diagramas - Segunda Iteración**
+En este enlace encontrarás otro **README** con los **modelos y diagramas** correspondientes a la segunda iteración del proyecto, donde se introdujeron ajustes y mejoras adicionales a los modelos previos.
+
+## Instrucciones para Ver los Diagramas
+
+1. **Primer ReadMe**: Contiene los archivos con los diagramas de la primera iteración, es decir el que hicimos a papel, pero esta pasado a ordenador. 
+2. **Segundo ReadMe**: Similar al primero, pero con las modificaciones y mejoras realizadas en la segunda iteración del proyecto.
+
+
+
+
+
+
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/GYdZjuJz)
 # Repo plantilla para exámenes [PRG*x*|EDA*x*|IDSW*x*]@gII.uneatlantico
 
 *Este documento es una guía para la realización y entrega de las evaluaciones en las asignaturas PRGx, EDAx e IDSWx del Grado en Ingeniería Informática. Detalla la estructura del repositorio de entrega, los artefactos requeridos y los criterios de evaluación.*
