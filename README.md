@@ -1,4 +1,30 @@
-[Descargar la entrega parcial de Software](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-pabloocanteroo/blob/e5d14bd4e4374c148fb406575ca2ec0b5038bd0b/documents/Entrega%20Parcial%20Software.pdf)
+# Sistema de Transporte Público
+
+## Documentos y Enlaces Importantes
+
+| **Descripción**                                      | **Enlace**                                                   |
+|------------------------------------------------------|--------------------------------------------------------------|
+| **Documento del Parcial (PDF)**                      | [Ver documento](./parcial.pdf)                               |
+| **Diagrama de Clases - Primera Iteración**           | [Ver diagramas (README 1ª iteración)](./primer_readme.md)    |
+| **Modelos y Diagramas - Segunda Iteración**          | [Ver diagramas (README 2ª iteración)](./segundo_readme.md)   |
+
+## Detalles
+
+### 1. **Documento del Parcial (PDF)**
+Este es el documento oficial del parcial, donde se explica el contexto del proyecto y los requisitos principales.
+
+### 2. **Diagrama de Clases - Primera Iteración**
+Este enlace te llevará a un **README** que contiene los **diagramas de clases** generados en la primera iteración del proyecto, donde se definieron las relaciones y clases principales del sistema de transporte público.
+
+### 3. **Modelos y Diagramas - Segunda Iteración**
+En este enlace encontrarás otro **README** con los **modelos y diagramas** correspondientes a la segunda iteración del proyecto, donde se introdujeron ajustes y mejoras adicionales a los modelos previos.
+
+## Instrucciones para Ver los Diagramas
+
+1. **Primer ReadMe**: Contiene los archivos con los diagramas de la primera iteración, es decir el que hicimos a papel, pero esta pasado a ordenador. 
+2. **Segundo ReadMe**: Similar al primero, pero con las modificaciones y mejoras realizadas en la segunda iteración del proyecto.
+
+
 
 
 
