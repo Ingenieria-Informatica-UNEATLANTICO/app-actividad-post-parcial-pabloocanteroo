@@ -1,3 +1,8 @@
+[Descargar la entrega parcial de Software](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-pabloocanteroo/blob/e5d14bd4e4374c148fb406575ca2ec0b5038bd0b/documents/Entrega%20Parcial%20Software.pdf)
+
+
+
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/GYdZjuJz)
 # Repo plantilla para exámenes [PRG*x*|EDA*x*|IDSW*x*]@gII.uneatlantico
 
