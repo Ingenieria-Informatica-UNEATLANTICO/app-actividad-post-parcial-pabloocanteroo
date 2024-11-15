@@ -6,7 +6,7 @@
 |------------------------------------------------------|--------------------------------------------------------------|
 | **Documento del Parcial (PDF)**                      | [Ver documento](./parcial.pdf)                               |
 | **Diagrama de Clases - Primera Iteración**           | [Ver diagramas (README 1ª iteración)](./primer_readme.md)    |
-| **Modelos y Diagramas - Segunda Iteración**          | [Ver diagramas (README 2ª iteración)](./segundo_readme.md)   |
+| **Diagrama de Clases - Segunda Iteración**          | [Ver diagramas (README 2ª iteración)](./segundo_readme.md)   |
 
 ## Detalles
 
