@@ -5,8 +5,8 @@
 | **Descripción**                                      | **Enlace**                                                   |
 |------------------------------------------------------|--------------------------------------------------------------|
 | **Documento del Parcial (PDF)**                      | [Ver documento](./documents/Entrega%20Parcial%20Software.pdf)                              |
-| **Diagrama de Clases - Primera Iteración**           |[ (README 1ª iteración)](./Entrega/Primera%20Iteración/Readme.md)    |
-| **Diagrama de Clases - Segunda Iteración**          | [ (README 2ª iteración)](./Entrega/Segunda%20Iteracion/Readme.md)    |
+| **Diagrama de Clases - Primera Iteración**           |[ (README 1ª iteración)](./modelosUML/Primera%20iteración/Readme.md)    |
+| **Diagrama de Clases - Segunda Iteración**          | [ (README 2ª iteración)](./modelosUML/Segunda%20iteración/Readme.md)    |
 
 ## Detalles
 
