@@ -1,0 +1,111 @@
+@startuml
+' Diagrama de objetos basado estrictamente en el diagrama de clases proporcionado
+
+object SistemaDeTransportePublico1 {
+    flotas = {flota1}
+    tarifas = {tarifaNormal, tarifaAbono}
+    servicios = {servicio1}
+}
+
+object Flota1 {
+    vehiculos = {vehiculo1, vehiculo2}
+}
+
+object Vehiculo1 {
+    estado = "En servicio"
+    capacidad = 50
+}
+
+object Vehiculo2 {
+    estado = "En mantenimiento"
+    capacidad = 40
+}
+
+object TarifaNormal {
+    tipo = "Tarifa normal"
+    precio = 2.5
+}
+
+object TarifaAbono {
+    tipo = "Abono mensual"
+    precio = 50
+}
+
+object FormaDePagoTarjeta {
+    metodo = "Tarjeta de crédito"
+}
+
+object FormaDePagoAbono {
+    metodo = "Abono mensual"
+}
+
+object AbonoMensual {
+    metodo = "Abono mensual"
+    descuento = 10
+}
+
+object Servicio1 {
+    ruta = ruta1
+    horario = horario1
+}
+
+object Ruta1 {
+    nombre = "Ruta A"
+    paradas = {parada1, parada2}
+}
+
+object Horario1 {
+    salida = "08:00 AM"
+    llegada = "09:00 AM"
+}
+
+object Pasajero1 {
+    nombre = "Juan Pérez"
+}
+
+object Conductor1 {
+    nombre = "Carlos García"
+}
+
+object Incidencia1 {
+    tipo = "Accidente menor"
+    descripcion = "Freno defectuoso"
+}
+
+object Parada1 {
+    nombre = "Estación Central"
+}
+
+object Parada2 {
+    nombre = "Parada del Parque"
+}
+
+' Relaciones entre objetos
+
+SistemaDeTransportePublico1 --|> Flota1 : incluye
+SistemaDeTransportePublico1 --> TarifaNormal : establece
+SistemaDeTransportePublico1 --> TarifaAbono : establece
+SistemaDeTransportePublico1 --> Servicio1 : coordina
+
+Flota1 --* Vehiculo1 : incluye
+Flota1 --* Vehiculo2 : incluye
+
+Servicio1 --> Ruta1 : sigue
+Servicio1 --> Incidencia1 : reporta
+Servicio1 --> Horario1 : tiene
+
+Ruta1 --> Parada1 : pasa por
+Ruta1 --> Parada2 : pasa por
+
+Pasajero1 --> Vehiculo1 : se monta en
+Pasajero1 --> TarifaNormal : paga con
+Pasajero1 --> FormaDePagoTarjeta : usa
+
+Pasajero1 --> TarifaAbono : paga con
+Pasajero1 --> FormaDePagoAbono : usa
+Pasajero1 --> AbonoMensual: compra
+
+Conductor1 --> Vehiculo1 : conduce
+Conductor1 --> Incidencia1 : reporta
+
+@enduml

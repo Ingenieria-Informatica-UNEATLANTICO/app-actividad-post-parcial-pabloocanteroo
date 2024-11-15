@@ -1,0 +1,70 @@
+@startuml
+' Diagrama de clases optimizado para Sistema de Transporte Público
+
+class SistemaDeTransportePublico {
+}
+
+class Persona {
+}
+
+class Pasajero {
+}
+Persona <|-- Pasajero
+Pasajero --> Vehiculo : se monta en
+Pasajero --> Tarifa : paga con
+
+class Conductor {
+}
+Persona <|-- Conductor
+Conductor --> Vehiculo : conduce
+Conductor --> Incidencia : reporta
+
+class Tarifa {
+}
+Tarifa --> FormaDePago : se paga con
+
+class FormaDePago {
+}
+
+class Vehiculo {
+}
+Vehiculo --> Incidencia : sufre
+
+class Flota {
+}
+Flota --* Vehiculo : incluye
+Flota --> SistemaDeTransportePublico : pertenece a
+
+class Incidencia {
+}
+
+class Servicio {
+}
+Servicio --> Ruta : ofrece
+Servicio --> Incidencia : usa
+Servicio --> SistemaDeTransportePublico : gestionado por
+
+class Paradas {
+}
+
+class Ruta {
+}
+Ruta --* Paradas : compone
+Ruta --> Horarios : tiene
+
+class Horarios {
+}
+
+' Relación indirecta entre Incidencia y Persona a través de Conductor
+Incidencia ..> Persona : relación indirecta
+
+' Conexión entre el sistema de transporte y todos sus elementos
+SistemaDeTransportePublico --> Flota : administra
+SistemaDeTransportePublico --> Tarifa : establece
+SistemaDeTransportePublico --> Servicio : coordina
+SistemaDeTransportePublico --> Persona : ofrece transporte a
+
+' Relación entre Abono y FormaDePago fusionadas
+FormaDePago <|-- Abono
+
+@enduml
